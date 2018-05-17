@@ -97,8 +97,8 @@ if __name__ == '__main__':
     t = 8
     keys = generate_key(n, t)
     public_key = keys['public']
-    private_ley = keys['private']
+    private_key = keys['private']
     c = encrypt(m, public_key)
     print(c)
-    p = decrypt(c, private_ley)
+    p = decrypt(c, private_key)
     print(p)
